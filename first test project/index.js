@@ -31,7 +31,6 @@ console.log(numbers.sort((a,b) => b-a))
 
 
 /*
-
 JS
 1. Jakie są różnice między const, let, var
 2. document.querySelector()
