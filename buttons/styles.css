@@ -1,3 +1,40 @@
+#subscribeButton {
+    transition: 300ms;
+}
+
+/* #subscribeButton:hover {
+    transform: scale(1.2) rotate(30deg);
+} */
+
+/* #subscribeButton::after {
+    content: 'Siemka!';
+    color: yellow;
+    display: block;
+    background-color: green;
+} */
+
+/* 
+input[type='radio'] {
+    display: hidden;
+}
+
+input[type='radio']::after {
+    content: '';
+    display: block;
+    background-color: gold;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+input[type='radio']:hover::after {
+    background-color: yellow;
+}
+
+input[type='radio'][selected]::after {
+    background-color: green;
+} */
+
 .subscribed{
     background-color: rgba(205, 205, 205, 0.515);
     color: rgb(255, 255, 255);

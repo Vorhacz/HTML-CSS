@@ -1,15 +1,66 @@
-var btn = document.getElementById("btn");
+function getIsSubscribed() {
+    // Połączenie z bazą danych, odczytujemy czy jest zasubsrybowane
+    return Math.random() < 0.5 ? false : true;
+}
 
-btn.addEventListener("click", function onClick() {
-    document.getElementById("btn").className = "subscribed";
-    document.getElementById("btn").textContent = "Subskrybujesz";
-    document.getElementById("btn").id = "btn2";
+var subscribeButton = $("#subscribeButton");
+var isSubscribed = getIsSubscribed();
+
+function updateSubscribeButton(isSubscribed) {
+    if(isSubscribed) {
+        subscribeButton.removeClass("subscribe");
+        subscribeButton.addClass("subscribed");
+        subscribeButton.text("Subskrybujesz");
+    }
+    else {
+        subscribeButton.removeClass("subscribed");
+        subscribeButton.addClass("subscribe");
+        subscribeButton.text("Subskrybuj");
+    }
+}
+
+subscribeButton.on("click", function onClick() {
+    isSubscribed = !isSubscribed;
+    updateSubscribeButton(isSubscribed);
 });
 
-var btn2 = document.getElementById("btn2");
+updateSubscribeButton(isSubscribed);
 
-btn2.addEventListener("click", function onClick() {
-    document.getElementById("btn2").className = "subscribe";
-    document.getElementById("btn2").textContent = "Subskrybuj";
-    document.getElementById("btn").id = "btn";
+/*
+JQUERY
+
+var subscribeButton = $("#subscribeButton");
+var isSubscribed = false;
+
+subscribeButton.on("click", function onClick() {
+    isSubscribed = !isSubscribed;
+    if(isSubscribed) {
+        subscribeButton.removeClass("subscribe");
+        subscribeButton.addClass("subscribed");
+        subscribeButton.text("Subskrybujesz");
+    }
+    else {
+        subscribeButton.removeClass("subscribed");
+        subscribeButton.addClass("subscribe");
+        subscribeButton.text("Subskrybuj");
+    }
 });
+*/
+
+/*
+var subscribeButton = document.getElementById("subscribeButton");
+var isSubscribed = false;
+
+subscribeButton.addEventListener("click", function onClick() {
+    isSubscribed = !isSubscribed;
+    if(isSubscribed) {
+        subscribeButton.className = "subscribed";
+        subscribeButton.textContent = "Subskrybujesz";
+    }
+    else {
+        subscribeButton.className = "subscribe";
+        subscribeButton.textContent = "Subskrybuj";
+    }
+});
+
+*/
