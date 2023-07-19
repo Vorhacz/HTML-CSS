@@ -1,3 +1,4 @@
+/*
 function getIsSubscribed() {
     // Połączenie z bazą danych, odczytujemy czy jest zasubsrybowane
     return Math.random() < 0.5 ? false : true;
@@ -25,7 +26,7 @@ subscribeButton.on("click", function onClick() {
 });
 
 updateSubscribeButton(isSubscribed);
-
+*/
 /*
 JQUERY
 
@@ -47,7 +48,7 @@ subscribeButton.on("click", function onClick() {
 });
 */
 
-/*
+
 var subscribeButton = document.getElementById("subscribeButton");
 var isSubscribed = false;
 
@@ -63,4 +64,3 @@ subscribeButton.addEventListener("click", function onClick() {
     }
 });
 
-*/
