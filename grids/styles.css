@@ -1,3 +1,9 @@
+body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
 #grid {
     background-color: black;
@@ -16,3 +22,12 @@
     padding: 8px;
     text-align: center;
 }
+
+.row > div {
+    padding: 20px;
+    background-color: teal;
+    border: 2px solid black;
+}
+
+/*
+*/
