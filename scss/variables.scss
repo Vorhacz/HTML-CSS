@@ -1,4 +1,28 @@
-$color: red;
+$color: blue;
+
+/*
+
+div {
+    font-size: 20px; }
+    div p {
+        color: blue; }
+    div ul {
+        color: green; }
+
+} - This is how i should do it in CSS*/
+
+div {
+    font-size: 20px;
+
+    p {
+        color: black;
+    }
+
+    ul {
+        color: green;
+    }
+} /* - This is how i can do it in SCSS. Just cleaner syntax with SCSS :)*/
+
 
 ul {
     font-size: 12px;
