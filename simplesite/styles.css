@@ -1,18 +1,41 @@
-.text {
-    display: block;
-    text-align: center;
+body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h1 {
-    margin-bottom: 10px;
+.header {
+    display: flex; /* Ustawiamy flexbox, aby elementy były w jednym rzędzie */
+    justify-content: center;
+    align-items: center; /* Wyśrodkowujemy elementy w pionie */
+}
+
+.mainTitle {
+    font-size: 2em; /* Rozmiar czcionki */
+    font-weight: bold; /* Grubość czcionki */
+    color: #333; /* Kolor tekstu */
+    margin-top: 20px;
+    margin-bottom: 10px; /* Margines dolny */
+    text-decoration: none;
 }
 
 .underTitle {
+    display: flex;
+    justify-content: center;
     font-size: 13px;
+    margin-top: -5px;
 }
 
 .mainImage {
-    width: 50px;
-    margin-left: 10px;
+    width: 30px;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.searchSign {
+    margin-right: 5px;
 }
