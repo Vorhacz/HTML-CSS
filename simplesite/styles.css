@@ -1,5 +1,8 @@
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #272727;
+    color: white;
+    overflow-x: hidden;
 }
 
 .header {
@@ -9,19 +12,21 @@ body {
 }
 
 .mainTitle {
-    font-size: 2em; /* Rozmiar czcionki */
-    font-weight: bold; /* Grubość czcionki */
-    color: #333; /* Kolor tekstu */
-    margin-top: 20px;
-    margin-bottom: 10px; /* Margines dolny */
     text-decoration: none;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(255, 196, 0);
+    margin-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .underTitle {
+    color: rgb(255, 196, 0);
     display: flex;
     justify-content: center;
     font-size: 13px;
-    margin-top: -5px;
+    margin-top: -7px;
 }
 
 .mainImage {
@@ -32,14 +37,37 @@ body {
 
 .search {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: right;
+    margin-right: 250px;
+    margin-bottom: -30px;
 }
 
 .searchSign {
     margin-right: 5px;
 }
 
-.imagesMainSite {
-    
+.thumbnail {
+    transition: 300ms;
+    margin: 20px;
+    max-height: 200px;
+    max-width: 300px;
+}
+
+.thumbnail img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid orange;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
 }
