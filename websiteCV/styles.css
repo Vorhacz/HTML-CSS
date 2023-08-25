@@ -11,14 +11,25 @@ body {
 }
 
 .logo-container {
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;  
     align-items: center;
 }
 
 .logo {
-    width: 250px;
+    width: 300px;
     height: auto;
+}
+
+.underlogotext {
+    display: flex;
+    justify-content: left;
+    font-family: 'Dancing Script';
+    font-size: 19px;
+    font-style: italic;
+    margin-top: 10px;
 }
 
 #header {
