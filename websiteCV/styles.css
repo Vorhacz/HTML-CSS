@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     justify-content: center;  
     align-items: center;
-    margin-right: 100px;
+    margin-left:120px;
 }
 
 .logo {
@@ -56,7 +56,16 @@ nav {
 .maintitle a {
     opacity: 1;
     font-size: 110%;
-    color:#bed6ff;
+    font-weight: bold;
+    color:#e5eafc;
+    padding: 10px 20px;
+    background-color: #a28ff43c;
+    border-radius: 50px;
+}
+
+.maintitle a:hover {
+    color: #e5eafc;
+    background-color: #a28ff48f;
 }
 
 nav ul li {
@@ -72,12 +81,26 @@ nav ul li a {
     text-decoration: none;
     border-radius: 100px;
     cursor: pointer;
+    opacity: 0.6;
+    position: relative;
 }
 
 nav ul li a:hover {
+    opacity: 1;
     color:#bed6ff;
 }
 
-nav ul li a:not(:hover) {
-    opacity: 0.6;
+nav ul li:not(.maintitle) a::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #bed6ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+nav ul li:not(.maintitle) a:hover::after {
+    width: 100%
 }
