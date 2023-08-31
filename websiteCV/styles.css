@@ -4,6 +4,7 @@
     padding: 0;
     font-family:'Century Gothic', sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -103,4 +104,37 @@ nav ul li:not(.maintitle) a::after {
 
 nav ul li:not(.maintitle) a:hover::after {
     width: 100%
+}
+
+/* --- o mnie --- */
+
+#about {
+    padding: 70px;
+    background-color: rgb(31, 29, 36);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 90%;
+    border-radius: 20px;
+}
+
+.about-col-2 {
+    flex-basis: 63%;
+    color: #bccff0;
+}
+
+.undertext {
+    margin-top: 20px;
+    letter-spacing: 1px;
+    color: white;
 }
