@@ -10,6 +10,7 @@
 body {
     background: black;
     color: white;
+    overflow-x: hidden;
 }
 
 .logo-container {
@@ -44,7 +45,12 @@ body {
 }
 
 .container {
-    padding: 10px, 10%;
+    height: 80px;
+    width: 60%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(to right, rgba(26, 22, 27, 0.74) 0%, rgba(26, 22, 27, 0) 100%);
 }
 
 nav {
